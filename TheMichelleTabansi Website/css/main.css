@@ -1,0 +1,81 @@
+a{
+  box-sizing: border-box;
+}
+
+body{
+
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  margin:auto;
+  background-color: darkgrey;
+}
+
+.DropMenu{
+  float:left;
+
+}
+
+.hero{
+  background-color: blue;
+  width: 100%;
+  height: 400px;
+}
+
+.Display{
+  width: 100%
+
+}
+
+.comic{
+  background-color: pink;
+  float: left;
+  height: 100px;
+  width: 25%
+
+}
+
+.writing{
+  background-color: cyan;
+  float: left;
+  height: 100px;
+  width: 25%
+}
+
+.skit{
+  background-color: magenta;
+  float: left;
+  height: 100px;
+  width: 25%
+}
+
+.art{
+  background-color: lightgreen;
+  float: left;
+  height: 100px;
+  width: 25%
+}
+
+.Subscribe{
+  width: 100%
+  height:200px;
+  background-color: purple;
+}
+
+.Footer{
+  width: 100%
+}
+
+.Contact{
+  background-color: red;
+  float: left;
+  width: 80%
+}
+
+.Social{
+  background-color: yellow;
+  width 20%
+  float: right;
+}
