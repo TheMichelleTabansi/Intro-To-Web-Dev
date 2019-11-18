@@ -1,108 +1,144 @@
 a{
-  box-sizing: border-box;
+  color:white;
+  text-decoration: none;
+  cursor: auto;
+}
+a:hover{
+  color: blue;
+}
+body{
+  background: black;
+  margin: auto;
 }
 
-body{
 
+.container{
+  width: 100%;
+  height:auto;
 }
 
 .header{
   width: 100%;
-  text-align:center;
-  margin:auto;
-  height: 2em;
-  background-color: darkgrey;
-}
-
-.Search{
-  background-color: lightblue;
-  float:right;
-  width: 20%;
-  height: 2em;
-}
-
-.hero{
-  background-color: blue;
-  font-size: 80px;
-  width: 100%;
-  height: 300px;
-}
-
-.Menu{
-  width: 100%;
-  font-size: 20px;
-  height: 2em;
-}
-
-.comic{
-  background-color: pink;
-  height: 2em;
-  text-align: center;
-  float: left;
-  width: 25%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Marcellus SC', serif;
+  font-weight: bolder;
 
 }
 
-.writing{
-  background-color: cyan;
-  text-align: center;
-  float: left;
-  width: 25%;
-  height: 2em;
+.logo{
+  justify-content: flex-start;
+  padding: 3%;
+  background-color: grey;
 }
 
-.videos{
-  background-color: magenta;
-  text-align: center;
-  float: left;
-  height: 2em;
-  width: 25%
-}
-.WhatsNew{
-  width: auto;
-  font-size: 20px;
-  background-color: lightgreen;
-}
-
-.update1{
-  float:left;
-  width: 25%;
-  height: 7em;
-  text-align: center;
-  background-color: magenta;
-}
-
-.update2{
-  float:left;
-  width: 25%;
-  height: 7em;
-  text-align: center;
-  background-color: lightblue;
+.globalNav{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
 
 .art{
-  background-color: lightgreen;
   text-align: center;
-  float: left;
-  width: 25%;
-  height: 2em;
+  margin: 3%;
 }
+
+.comic{
+  text-align: center;
+  margin: 3%;
+}
+
+
+.writing{
+  text-align: center;
+  margin: 3%;
+}
+
+.videos{
+  text-align: center;
+  margin: 3%;
+}
+
+
+.hero img{
+  background-color: blue;
+  font-size: 80px;
+  float: left;
+  width: 100%;
+  height: 400px;
+}
+
+
+.WhatsNew{
+  width: auto;
+  color: black;
+}
+
+.WhatsNew h1{
+  margin-top: 10%;
+  margin-left:2.5%;
+  font-size: 40px;
+  color: white;
+}
+.update{
+  float:left;
+  width: 20%;
+
+  text-align: center;
+  background-color: lightgrey;
+  margin: 2.5%;
+}
+
+.update img{
+  width: 100%;
+  max-height: 150px;
+}
+
+.update:hover{
+  opacity: 0.5;
+}
+
 
 .Footer{
   width: 100%;
+  background-color: blue;
+}
 
+.Footer button{
+  color: white;
+  font-size: 15px;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 7px;
+  margin: 10px 10px 10px 10px;
 }
 
 .Contact{
-  background-color: red;
   float: left;
-  height:8em;
-  width: 80%
+  width: 100%;
+  background-color: blue;
+  padding-left: 3%;
+}
+
+.Contact h1{
+  font-weight: bolder;
+  font-family: 'Marcellus SC', serif;
+  color: white;
+  font-size: 40px;
+  margin: 1% 0%;
+}
+
+.Contact h2{
+  font-family: 'Marcellus SC', serif;
+  font-size: 30px;
+  margin: 0.5% 0%;
 }
 
 .Social{
-  background-color: yellow;
+  padding-top: 1%;
+  padding-right: 6%;
   width: 20%;
-  height:8em;
   float: right;
 }
