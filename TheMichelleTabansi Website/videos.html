@@ -42,8 +42,9 @@
 
   </div>
 
+//display all videos
   <div class="artdisplay">
-
+//short films
     <div class="segment_slider">
       <h1>Short films</h1>
       <div class="oneview">
@@ -104,14 +105,17 @@
 
       </div>
 
+      <a class="prev" onclick="oneview(-1);" id="prev">&#10094;</a>
+      <a class="next" onclick="oneview(1);" id="next">&#10095;</a>
 
     </div>
 
     <div class="segment_slider">
+      //animations
       <h1>Animated shorts</h1>
       <div class="oneview">
 
-        <div class="hiding" id="moves">
+        <div class="hiding" id="moves2">
 
           <div class="video">
             <video width="320" height="240" controls>
@@ -166,15 +170,16 @@
         </div>
 
       </div>
-
-
+//second pair of arrows
+      <a class="prev" onclick="oneview2(-1);" id="prev2">&#10094;</a>
+      <a class="next" onclick="oneview2(1);" id="next2">&#10095;</a>
     </div>
 
     <div class="segment_slider">
       <h1>Skits</h1>
       <div class="oneview">
 
-        <div class="hiding">
+        <div class="hiding" id="moves3">
 
           <div class="video">
             <video width="320" height="240" controls>
@@ -230,10 +235,10 @@
 
       </div>
 
-    </div>
+      <a class="prev" onclick="oneview3(-1);" id="prev3">&#10094;</a>
+      <a class="next" onclick="oneview3(1);" id="next3">&#10095;</a>
 
-    <a class="prev" onclick="oneview(-1);" id="prev">&#10094;</a>
-    <a class="next" onclick="oneview(1);" id="next">&#10095;</a>
+    </div>
 
     <script src="main.js"></script>
 
