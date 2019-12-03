@@ -11,10 +11,10 @@ body{
   margin: auto;
 }
 
-
 .container{
   width: 100%;
   height:auto;
+  position:relative;
 }
 
 .header{
@@ -70,7 +70,7 @@ body{
 
 .hero{
   background-color: blue;
-  width: 100%;
+  width: auto;
   max-height: 500px;
 }
 

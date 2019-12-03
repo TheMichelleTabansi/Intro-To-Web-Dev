@@ -7,24 +7,26 @@
 }
 
 .artword{
-  font-size: 150px;
-  position:absolute;
-  padding-left: 14%;
-  padding-top: 10%;
+ font-size: 150px;
+ position:absolute;
   color: white;
   font-family: 'Marcellus SC', serif;
+  left:150px;
+  top:130px;
+}
+
+.positionIt{
+  position:absolute;
+  left: 2.5%;
 }
 
 .back{
   font-size: 50px;
   position:absolute;
-  padding-left: 2.5%;
-  padding-top: 21.7%;
+  top: 328px;
   color: white;
   font-family: 'Marcellus SC', serif;
 }
-
-
 
 .arthero img{
   width: 100%;
@@ -62,10 +64,11 @@
 }
 
 .video{
-  background-color: rgba(70, 70, 70, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  float:left;
   width: 20%;
-  margin:0% 2.5% 3% 2.5%;
-  float: left;
+  margin:0% 1.25% 2% 1.25%;
+  flex: 0 0 23%;
   height: 200px;
   box-shadow: 0px 10px 20px blue;
 }
@@ -74,6 +77,57 @@
   justify-content: center;
   width: 100%;
   height: 200px;
+}
+
+.video video:hover{
+  opacity: 50%;
+}
+
+.segment_slider h1{
+  position: relative;
+  left: 2.5%;
+  font-size: 60px;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+}
+
+.segment_slider{
+  width:100%;
+  margin:auto;
+  background: black;
+  min-height:50px;
+  position: relative;
+  overflow:hidden;
+}
+
+.oneview{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.hiding{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  position:relative;
+
+}
+
+.prev, .next{
+  font-size:2rem;
+  position:absolute;
+  top:50%;
+  transform:translateY(50%);
+  cursor:pointer;
+}
+
+.prev{
+  left:2.5%;
+}
+
+.next{
+  right:2%;
 }
 
 .piece img{
