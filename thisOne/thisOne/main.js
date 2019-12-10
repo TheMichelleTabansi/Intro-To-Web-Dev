@@ -1,4 +1,24 @@
 
+var  img = document.createElement("img");
+
+function closeModal(){
+  document.getElementById('my_modal').style.display="none";
+  document.getElementById('my_modal').removeChild(img);
+}
+
+function loadImg(imagePth){
+  document.getElementById('my_modal').style.display="block";
+
+  document.getElementById('my_modal').appendChild(img);
+
+  img.src=imagePth;
+  img.style.position="relative";
+  img.style.maxHeight="90vh";
+  img.style.left="50%";
+  img.style.top="50%";
+  img.style.transform="translate(-50%,-50%)";
+}
+
 $(".slide_bttn").click(function(){
 
   var myself=$(this).attr("class");//prev or next?
@@ -23,23 +43,3 @@ $(".slide_bttn").click(function(){
     myParent.find(".hiding").animate({left: "0px"},100);
   }
 });
-
-var img = document.createElement("img");
-
-function closeModal(){
-  document.getElementById('my_modal').style.display="none";
-  document.getElementById('my_modal').removeChild(img);
-}
-
-function loadImg(imgPth){
-  document.getElementById('my_modal').style.display="block";
-  document.getElementById('my_modal').appendChild(img);
-
-  img.src= jaiye3.jpg;
-  img.style.position="relative";
-  img.style.maxHeight="90vh";
-  img.style.left="50%";
-  img.style.top="50%";
-  img.style.transform="translate(-50%,-50%)";
-
-}

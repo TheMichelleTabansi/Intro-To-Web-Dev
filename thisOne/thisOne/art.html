@@ -20,7 +20,7 @@
 
 <div class="header">
   <div class="logo">
-    <img src="Logo.jpg" alt="Logo">
+    <a href="./portfolio.html"><img src="Logo.jpg" alt="Logo"></a>
   </div>
 
 
@@ -29,7 +29,7 @@
     <div class="art"><a href="art.html">Art</a></div>
     <div class="comic"><a href="comics.html">Comics</a></div>
     <div class="videos"><a href="videos.html">Videos</a></div>
-    <div class="writing"><a href="writings.html">Writings</a></div>
+    <div class="writing"><a href="writing.html">Writing</a></div>
 
   </div>
   </div>
@@ -45,43 +45,67 @@
 
   <div class="artdisplay">
     <div class="segment">
-      <h1>Paintings & sketches</h1>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
+
+      <div class="piece" onclick="loadImg('IMG_9352.jpg')">
+        <h1 class="title">Title</h1>
+        <img src="IMG_9352.jpg" alt="comic piece">
+      </div>
+
+      <div class="piece" onclick="loadImg('IMG_8934.jpg')">
+        <h1 class="title">Title</h1>
+         <img src="IMG_8934.jpg" alt="comic piece">
+       </div>
+
+      <div class="piece" onclick="loadImg('IMG_9271.jpg')">
+        <h1 class="title">Title</h1>
+        <img src="IMG_9271.jpg" alt="comic piece"></div>
+
+        <div class="piece" onclick="loadImg('IMG_9352.jpg')">
+          <h1 class="title">Title</h1>
+          <img src="IMG_9352.jpg" alt="comic piece">
+        </div>
+
+        <div class="piece" onclick="loadImg('IMG_9621.jpg')">
+          <h1 class="title">Title</h1>
+           <img src="IMG_9621.jpg" alt="comic piece">
+         </div>
+
+        <div class="piece" onclick="loadImg('IMG_9613.jpg')">
+          <h1 class="title">Title</h1>
+          <img src="IMG_9613.jpg" alt="comic piece"></div>
+
+          <div class="piece" onclick="loadImg('IMG_8962.jpg')">
+            <h1 class="title">Title</h1>
+            <img src="IMG_8962.jpg" alt="comic piece">
+          </div>
+
+          <div class="piece" onclick="loadImg('jaiye3.jpg')">
+            <h1 class="title">Title</h1>
+             <img src="jaiye3.jpg" alt="comic piece">
+           </div>
+
+          <div class="piece" onclick="loadImg('IMG_9658.jpg')">
+            <h1 class="title">Title</h1>
+            <img src="IMG_9658.jpg" alt="comic piece">
+          </div>
+
+            <div class="piece" onclick="loadImg('IMG_9271.jpg')">
+              <h1 class="title">Title</h1>
+              <img src="IMG_9271.jpg" alt="comic piece">
+            </div>
+
+            <div class="piece" onclick="loadImg('IMG_8834.jpg')">
+              <h1 class="title">Title</h1>
+               <img src="IMG_8834.jpg" alt="comic piece">
+             </div>
+
     </div>
 
-    <div class="segment">
-      <h1>Digital Compositions</h1>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9352.jpg" alt="comic piece"></div>
-      <div class="piece"> <img src="IMG_9512.jpg" alt="comic piece"></div>
-      </div>
-
-    <div class="segment">
-      <h1>3-Dimentional pieces</h1>
-      <div class="piece" onclick="loadImg('jaiye3.jpg')">
-        <img src="jaiye3.jpg" alt="">
-      </div>
-      <div class="piece" onclick="loadImg('jaiye3.jpg')">
-         <img src="jaiye3.jpg" alt="comic piece">
-       </div>
-      <div class="piece" onclick="loadImg('jaiye3.jpg')">
-         <img src="jaiye3.jpg" alt="comic piece">
-       </div>
-      <div class="piece" onclick="loadImg('jaiye3.jpg')">
-        <img src="jaiye3.jpg" alt="comic piece">
-      </div>
-
-      <div class="my_modal" id="my_modal" style="display:none;">
-    <button class="close" onclick="closeModal();">close</button>
+    <div class="my_modal" id="my_modal" style="display:none;">
+      <button class="close" onclick="closeModal();"><i class="fas fa-window-close fa-2x"></i></button>
   </div>
 
-      </div>
-
-      <script src="main.js"></script>
+    <script src="main.js"></script>
 
   </div>
 

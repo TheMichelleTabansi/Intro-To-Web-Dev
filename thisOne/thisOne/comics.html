@@ -19,7 +19,7 @@
 
 <div class="header">
   <div class="logo">
-    <img src="Logo.jpg" alt="Logo">
+    <a href="./portfolio.html"><img src="Logo.jpg" alt="Logo"></a>
   </div>
 
 
@@ -28,7 +28,7 @@
     <div class="art"><a href="art.html">Art</a></div>
     <div class="comic"><a href="comics.html">Comics</a></div>
     <div class="videos"><a href="videos.html">Videos</a></div>
-    <div class="writing"><a href="writings.html">Writings</a></div>
+    <div class="writing"><a href="writing.html">Writing</a></div>
 
   </div>
   </div>
@@ -44,29 +44,23 @@
   <div class="artdisplay">
     <div class="segment">
       <h1>Paintings & sketches</h1>
-      <div class="piece"><a href="#"> <img src="IMG_9352.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="jaiye3.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="IMG_9613.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"><img src="IMG_9512.jpg" alt="comic piece"></a></div>
+      <div class="piece" onclick="loadImg('jaiye.jpg')">
+        <img src="IMG_9352.jpg" alt="comic piece">
+      </div>
+
+      <div class="piece" onclick="loadImg('jaiye.jpg')">
+         <img src="jaiye3.jpg" alt="comic piece">
+       </div>
+
+      <div class="piece" onclick="loadImg('jaiye.jpg')">
+        <img src="IMG_9613.jpg" alt="comic piece"></div>
     </div>
 
-    <div class="segment">
-      <h1>Digital Compositions</h1>
-      <div class="piece"><a href="#"> <img src="IMG_9352.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="jaiye3.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="IMG_9613.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"><img src="IMG_9512.jpg" alt="comic piece"></a></div>
-    </div>
+    <div class="my_modal" id="my_modal" style="display:none;">
+      <button class="close" onclick="closeModal();">close</button>
+  </div>
 
-    <div class="segment">
-      <h1>3-Dimentional pieces</h1>
-      <div class="piece"><a href="#"> <img src="IMG_9352.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="jaiye3.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"> <img src="IMG_9613.jpg" alt="comic piece"></a></div>
-      <div class="piece"><a href="#"><img src="IMG_9512.jpg" alt="comic piece"></a></div>
-    </div>
-
-
+    <script src="main.js"></script>
 
   </div>
 

@@ -28,6 +28,100 @@
   font-family: 'Marcellus SC', serif;
 }
 
+.segment{
+  padding-top: 3%;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+  font-size: 30px;
+  position: relative;
+}
+
+.segment h1{
+  margin-left: 2.5%;
+}
+
+.segment a:hover{
+  opacity: 0.5;
+}
+
+.piece1{
+  background-color: black;
+  width: 95%;
+  margin: 2% 2.5% 1% 2.5%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+}
+
+.piece2{
+  background-color: black;
+  width: 46%;
+  margin: 1% 1.25% 1% 2.5%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+  float: left;
+}
+
+.piece3{
+  background-color: black;
+  width: 46%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+  float: right;
+  margin: 1% 2.5% 1% 1.25%;
+}
+
+
+.wording{
+  float: right;
+  width: 45%;
+  padding-right: 2%;
+  font-size: 1.5vw;
+  overflow: hidden;
+  height: 244px;
+}
+
+.wording1{
+  float: right;
+  width: 45%;
+  padding-top: 0.5%;
+  padding-right: 2%;
+  font-size: 2vw;
+  overflow: hidden;
+}
+
+.piece1 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece2 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece3 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece1:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+.piece2:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+.piece3:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
 .arthero img{
   width: 100%;
   max-height: 400px;
@@ -40,27 +134,32 @@
   flex-direction: column;
 }
 
-.segment{
-  color: white;
-  font-family: 'Marcellus SC', serif;
-  font-size: 30px;
-}
-
-.segment h1{
-  margin-left: 2.5%;
-}
-
-.segment a:hover{
-  opacity: 0.5;
-}
-
 .piece{
-  background-color: grey;
-  width: 20%;
-  margin:0% 2.5% 3% 2.5%;
+  background-color: black;
+  width: 27%;
+  margin: 3%;
   float: left;
-  height: 300px;
   box-shadow: 0px 10px 20px blue;
+
+}
+
+.piece h1{
+  font-size: 2vw;
+  display: block;
+  justify-content: center;
+
+}
+
+.piece img{
+  width: 100%;
+  height: 300px
+}
+
+.piece:hover{
+  transform:scale(1.05);
+  transition:.4s;
+  background:black;
+  cursor: pointer;
 }
 
 .video{
@@ -82,6 +181,7 @@
 
 .video video:hover{
   opacity: 50%;
+  cursor: pointer;
 }
 
 .segment_slider h1{
@@ -133,11 +233,6 @@
   right:1%;
 }
 
-.piece img{
-  width: 100%;
-  height: 300px;
-}
-
 .active{
   /* position:relative;
   left:0; */
@@ -147,28 +242,34 @@
   animation: sliding .4s ease;
 }
 
-.piece:hover{
-  transform:scale(1.05);
-  transition:.4s;
-  background:#555555;
+@keyframes sliding {
+  from {left: 50px;}
+  to {left: 0px;}
 }
 
 .my_modal{
   width:100vw;
   height:100vh;
-  position: fixed;
+  position:fixed;
   top:0;
   left:0;
-  background: rgba(0, 100, 100, 0.75);
+  background: black;
 }
 
-.my_modal img{
-  position: relative;
-  width: 100%;
-  display: block;
+.close{
+  font:2rem;
+  color:white;
+  background: black;
+  text-transform: uppercase;
+  padding:5px 20px;
+  border:none;
+  position:fixed;
+  top:20px;
+  right:20px;
+  border-radius: 10px;
 }
 
-@keyframes sliding {
-  from {left: 50px;}
-  to {left: 0px;}
+.close:hover{
+  color:blue;
+  cursor: pointer;
 }
