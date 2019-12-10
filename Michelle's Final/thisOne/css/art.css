@@ -1,0 +1,299 @@
+
+.arthero{
+  background-color: blue;
+  width: 100%;
+  max-height: 400px;
+  color: white;
+}
+
+.artword{
+ font-size: 150px;
+ position:absolute;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+  left:150px;
+  top:130px;
+}
+
+.positionIt{
+  position:absolute;
+  left: 2.5%;
+}
+
+.back{
+  font-size: 50px;
+  position:absolute;
+  top: 328px;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+}
+
+.segment{
+  padding-top: 3%;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+  font-size: 30px;
+  position: relative;
+}
+
+.segment h1{
+  margin-left: 2.5%;
+}
+
+.segment a:hover{
+  opacity: 0.5;
+}
+
+.piece1{
+  background-color: black;
+  width: 95%;
+  margin: 2% 2.5% 1% 2.5%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+}
+
+.piece2{
+  background-color: black;
+  width: 46%;
+  margin: 1% 1.25% 1% 2.5%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+  float: left;
+}
+
+.piece3{
+  background-color: black;
+  width: 46%;
+  box-shadow: 0px 10px 20px blue;
+  overflow: hidden;
+  float: right;
+  margin: 1% 2.5% 1% 1.25%;
+}
+
+
+.wording{
+  float: right;
+  width: 45%;
+  padding-right: 2%;
+  font-size: 1.5vw;
+  overflow: hidden;
+  height: 244px;
+}
+
+.wording1{
+  float: right;
+  width: 45%;
+  padding-top: 0.5%;
+  padding-right: 2%;
+  font-size: 2vw;
+  overflow: hidden;
+}
+
+.piece1 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece2 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece3 img{
+  padding: 3%;
+  width: 50%;
+}
+
+.piece1:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+.piece2:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+.piece3:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+.arthero img{
+  width: 100%;
+  max-height: 400px;
+  justify-content: center;
+}
+
+.artdisplay{
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.piece{
+  background-color: black;
+  width: 27%;
+  margin: 3%;
+  float: left;
+  box-shadow: 0px 10px 20px blue;
+}
+
+.comicpiece{
+  background-color: black;
+  width: 25%;
+  margin: 2%;
+  float: left;
+  box-shadow: 0px 10px 20px blue;
+}
+
+.comicpiece img{
+  background-color: black;
+  width: 100%;
+  height: 10em;
+}
+
+.comicpiece h1{
+  font-size: 2vw;
+}
+
+.comicpiece:hover{
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transform: scale(1.1, 1.1);
+  opacity: 0.75;
+}
+
+.piece h1{
+  font-size: 2vw;
+  display: block;
+  justify-content: center;
+
+}
+
+.piece img{
+  width: 100%;
+  height: 300px
+}
+
+.piece:hover{
+  transform:scale(1.05);
+  transition:.4s;
+  background:black;
+  cursor: pointer;
+}
+
+.video{
+  background-color: rgba(0, 0, 0, 0.5);
+  float:left;
+  width: 20%;
+  margin:0% 1.25% 2% 1.25%;
+  flex: 0 0 23%;
+  height: 200px;
+  box-shadow: 0px 10px 20px blue;
+  transition: 0.6s ease;
+}
+
+.video video{
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.video video:hover{
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.segment_slider h1{
+  position: relative;
+  left: 2.5%;
+  font-size: 60px;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+}
+
+.segment_slider{
+  width:100%;
+  margin:auto;
+  background: black;
+  min-height:50px;
+  position: relative;
+  overflow:hidden;
+}
+
+.oneview{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+
+.hiding{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  position:relative;
+  left:0%;
+
+}
+
+.prev, .next{
+  font-size:2rem;
+  position:absolute;
+  top:57%;
+  transform:translateY(50%);
+  cursor:pointer;
+}
+
+.prev{
+  left:2%;
+}
+
+.next{
+  right:1%;
+}
+
+.active{
+  /* position:relative;
+  left:0; */
+}
+
+.anim{
+  animation: sliding .4s ease;
+}
+
+@keyframes sliding {
+  from {left: 50px;}
+  to {left: 0px;}
+}
+
+.my_modal{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background: black;
+}
+
+.close{
+  font:2rem;
+  color:white;
+  background: black;
+  text-transform: uppercase;
+  padding:5px 20px;
+  border:none;
+  position:fixed;
+  top:20px;
+  right:20px;
+  border-radius: 10px;
+}
+
+.close:hover{
+  color:blue;
+  cursor: pointer;
+}
